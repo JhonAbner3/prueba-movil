@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 8000px;
+}
+
+.izquierda {
+    background: #FFFFFF;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.derecha {
+    background: url(beautiful.png);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 100vh;
+}
+
+#pantalla-dividida {
+    display: flex;
+}
+
+.imag {
+    position: absolute;
+    width: 171px;
+    height: 49px;
+    left: 155px;
+    top: 75px;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: 0px;
+    text-align: left;
+    position: absolute;
+    height: 167px;
+    width: 389px;
+    left: 71px;
+    top: 183px;
+    border-radius: nullpx;
+    color: #3489FF;
+}  
+
+.parrafo { 
+    font: "Roboto";
+    font-size: 19px;
+    font-weight: 520;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-align: left;  
+    color: #404040;
+     
+    position: absolute;
+    width: 315px;
+    height: 104px;
+    left: 82px;
+    top: 260px;
+    opacity: 99%;
+}
+
+.parrafo- {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 540;
+    line-height: 1px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin: auto;  
+    color: #333333;
+     
+    position: absolute;
+    width: 344px;
+    height: 33px;
+    left: 82px;
+    top: 389px;
+}
+
+.form-register {
+    width: 380px;
+    padding: 75px;
+    margin: 9px;
+    margin-top: 335px;
+    font-family: 'calibri';
+}
+
+.cod {
+    width: 130%;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #D1D1D1;
+
+}
+
+.button {
+    width: 130%;
+    background: #3489FF;
+    border: none;
+    padding: 17px;
+    color: white;
+    border-radius: 80px;
+    margin: 30px 0;
+    font-weight: 750;
+}
+
+#tex {
+    border-style: solid;
+    border-color: #3489FF;
+    border-width: 1px;
+    /* height: 70px;
+    width: 307px;
+    left: 88px;
+    top: 644px;
+    border-radius: 20px;  
+    position: center;  */
+    box-sizing: border-box;
+    width: 307.8px;
+    height: 65px;
+    left: 88.2px;
+    top: 644px;
+
+    border: 1px solid #3489FF;
+    border-radius: 20px
+}
+
+.text {  
+    position: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 530;
+    font-size: 14px;
+    line-height: 28px;
+    /* or 233% */
+    
+    text-align: center;
+    letter-spacing: 0.25px;
+                                              
+    color: #404040;                                          
+                                              
+    opacity: 0.99;                                          
+}                                          
+                                          
+/* .texto {                                          
+    position: absolute;                                          
+    height: 92px;
+    left: 1.46%;
+    right: 68.06%;
+    top: 650px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    or 200%
+    
+    text-align: center;
+    letter-spacing: 0.25px;
+    
+    color: #333333;
+    
+    opacity: 0.3;
+} */
+
+@media screen and (max-width: 800px) {
+    .derecha {
+        display: none;
+    }
+
+    .imag {
+        top: 40px;
+        height: 49px;
+        left: 120px; 
+    }
+
+    .title {
+        left: 35px; 
+        top: 120px;
+        font-size: 45px; 
+    }
+
+    .parrafo {
+        left: 45px; 
+        top: 210px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .parrafo- {
+        left: 40px; 
+        top: 340px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .form-register {
+        width: 350px;
+        padding: 75px;
+        margin: 9px;
+        margin-top: 300px;
+    }
+
+    .button {
+        background: #3489FF;
+        border: none;
+        padding: 17px;
+        color: white;
+        border-radius: 80px;
+        margin: 30px 0;
+    }
+
+    #tex {
+        width: 270px;
+        height: 65px;
+        left: 88.2px;
+        top: 644px;
+    
+    }
+
+    .text {
+        font-weight: 530;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
